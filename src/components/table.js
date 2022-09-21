@@ -6,8 +6,6 @@ class Table extends React.Component {
             <div>
                 <div className="table colum">
                   <div id="cards" className="flex flex-end">
-                     <div></div>
-                     <div></div>
                   </div>
                 </div>
             </div>

@@ -4,6 +4,9 @@ const textX = ['2x-', '2,5x-', '3x-', '3,5x-', '4x-','4,5x-'];
 const foldCall = ['fold', 'call'];
 
 class Btns extends React.Component {
+  state = {
+    
+  }
     render() {
         return (
           <div>
