@@ -5,7 +5,7 @@ class Table extends React.Component {
     render() {
         return (
             <div>
-                <div className="table colum">
+                <div className="table">
                 </div>
             </div>
         );

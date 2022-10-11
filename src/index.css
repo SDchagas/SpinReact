@@ -1,24 +1,8 @@
 
- .center {
-  justify-content: center;
- }
  body {
   background-color:#ffffff;
  }
 
- 
-
- .InfoHero {
-  justify-content: end;
-  bottom: 0%;
- }
- .room{
-  top: 10%;
-  bottom: 10%;
-  position: absolute;
-  height: 90%;
-  width: 95%;
- }
 
  #icon {
   height: 100%;

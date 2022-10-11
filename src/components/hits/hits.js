@@ -13,8 +13,8 @@ class Hits extends React.Component {
     render() {
         return (
           <div className="hits">     
-             <div><h3>Acertoa: </h3> </div>     
-            <div><h3> Precisão (%) :</h3> </div>
+             <div><h3>Acertos:  10</h3> </div>     
+            <div><h3> Precisão (%) : 5%</h3> </div>
           </div>
         );
     }

@@ -6,6 +6,8 @@ class Cards extends React.Component {
         return (
             <div>
                 <div id="cards">
+                    <div className="Lhand"> 1</div>
+                    <div className="Rhand"> 2</div>
                 </div>
             </div>
         );
