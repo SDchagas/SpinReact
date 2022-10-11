@@ -1,8 +1,9 @@
 import React from "react";
+import './index.css'
 class Header extends React.Component {
     render() {
         return (
-            <div className="flex center">
+            <div className="bgroxo">
                 <svg id="icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="1212.000000pt" height="1108.000000pt" viewBox="0 0 1212.000000 1108.000000"
  preserveAspectRatio="xMidYMid meet">
