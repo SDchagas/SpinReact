@@ -1,10 +1,11 @@
 import React from "react";
+import './index.css'
 
 class Foot extends React.Component {
     render() {
         return (
-            <div>
-                <h6 id="TextFooter" className="marginL">By SDchagas - 2022</h6>
+            <div className="container">
+                <h6 className="marginL">By SDchagas - 2022</h6>
             </div>
         );
     }

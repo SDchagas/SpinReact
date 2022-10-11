@@ -1,0 +1,19 @@
+.marginL {
+    margin-left: 1%;
+   }
+
+.container {  
+    display: flex;
+    align-items:center ;
+    position: fixed;
+    justify-content: start;
+    padding: 1%;
+    bottom: 0%;
+    height: 0.5%;
+    background-color:#9e34db;
+    left: 0%;
+    width: 100%;
+   }
+   h6{
+    color: white;
+   }

@@ -1,4 +1,5 @@
 import React from "react";
+import './index.css';
 
 class Hits extends React.Component {
   state ={ //estado sempre um objeto
@@ -11,9 +12,9 @@ class Hits extends React.Component {
   };
     render() {
         return (
-          <div className="hits">
-             <div><h3>Acertos:  {this.state.hits}</h3></div>
-             <div><h3>%: {this.state.percent}</h3></div>
+          <div className="hits">     
+             <div><h3>Acertoa: </h3> </div>     
+            <div><h3> Precisão (%) :</h3> </div>
           </div>
         );
     }

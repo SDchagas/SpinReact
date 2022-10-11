@@ -1,11 +1,21 @@
 import React from "react";
+import Btns from "./components/btns/btns";
 import Header from "./components/Header/header";
+import Hits from "./components/hits/hits";
+import Foot from './components/footer/footer';
+import Table  from "./components/table/table";
+import Cards from "./components/cards/cards";
 
 class App extends React.Component {
    render (){
     return (
-    <body className="flex colum">
+    <body>
         <Header />
+        <Hits />
+        <Table />
+        <Cards />
+        <Btns />
+        <Foot />
     </body>
 );
 }

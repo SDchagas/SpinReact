@@ -3,6 +3,14 @@ h1 {
     color:white;
 }
 .bgroxo {
-    background-color: sblueviolet;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 5%;
+    background-color:#9e34db;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
 }

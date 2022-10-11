@@ -1,11 +1,11 @@
 import React from "react";
 import './index.css';
 
-class Table extends React.Component {
+class Cards extends React.Component {
     render() {
         return (
             <div>
-                <div className="table colum">
+                <div id="cards">
                 </div>
             </div>
         );
@@ -14,4 +14,4 @@ class Table extends React.Component {
 
 
 //aqui colocamos a propriedade, e no outro arquivo ela recupera;
-export default Table; //esporta essa função para que possamos recuperar em outro arquivo
+export default Cards; //esporta essa função para que possamos recuperar em outro arquivo

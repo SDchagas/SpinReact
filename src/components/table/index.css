@@ -1,0 +1,14 @@
+.table {
+    display: flex;
+    border-style: solid;
+    border-color: #1f0a1d;
+    border-width: 20px;
+    position:absolute;
+    background-color: #78807c;
+    border-radius: 50%;
+    width: 50%;
+    height: 45%;
+    left: 25%;
+    top: 25%;
+}
+    
