@@ -6,7 +6,7 @@ class InfoHero extends React.Component {
         return (
          <div>
             <div className="hero">
-              <h3 id="heroT">Hero</h3>
+              <h2 id="heroT">Hero</h2>
             </div>
               <div className="stats box">
                  <h5>BBs: 12</h5>

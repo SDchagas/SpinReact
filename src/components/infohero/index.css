@@ -16,14 +16,16 @@
 }
 
 #heroT {
- margin-top:23%;
+ margin-top:20%;
  margin-bottom: 0.2%;
  margin-left: 5%;
+ color: white;
 }
-h5 {
+h4 {
     margin-top:2%;
     margin-bottom: 0.2%;
     margin-left: 40%;
+    color: white;
 }
 .stats {
     flex-direction: column;

@@ -27,15 +27,15 @@
    }
    
    .nipe {
-      top:25%;
       text-align: center;
-      font-size: 400%;
+      font-size: 500%;
       color: white;
      
    }
 
    .value {
       margin: 0%;
+    margin-bottom: 0.1%;   
     margin-left: 5%;
     color: aliceblue;
    }
