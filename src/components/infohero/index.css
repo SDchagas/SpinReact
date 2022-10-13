@@ -1,0 +1,46 @@
+.box {
+    z-index: 0;
+    display: flex;
+    background-color: rgb(111, 110, 112);
+    width: 16.7%;
+    height: 5%;
+    position: absolute;
+    top: 82%;
+    left: 44%;
+    border-bottom-left-radius:20%;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+   
+
+}
+
+#heroT {
+ margin-top:23%;
+ margin-bottom: 0.2%;
+ margin-left: 5%;
+}
+h5 {
+    margin-top:2%;
+    margin-bottom: 0.2%;
+    margin-left: 40%;
+}
+.stats {
+    flex-direction: column;
+}
+.hero {
+    top: 81%;
+    left: 43%;
+    z-index: 1;
+    border-radius: 50%;
+    border-top-right-radius: 50%;   
+    border-bottom-right-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    height: 6%;
+    width: 6%;
+    background-color: rgb(111, 110, 112);
+    text-align: center;
+
+}

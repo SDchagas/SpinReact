@@ -6,7 +6,7 @@
     display: flex;
     align-items:center ;
     position: fixed;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 1%;
     bottom: 0%;
     height: 0.5%;

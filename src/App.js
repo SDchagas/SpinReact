@@ -5,6 +5,12 @@ import Hits from "./components/hits/hits";
 import Foot from './components/footer/footer';
 import Table  from "./components/table/table";
 import Cards from "./components/cards/cards";
+import InfoHero from "./components/infohero/infohero";
+
+const nipes = ['♦','♣' ,'♥', '♠']
+const textBtnsInitial = ['start', 'check', 'all-in'];
+const textX = ['2x-', '2,5x-', '3x-', '3,5x-', '4x-','4,5x-'];
+const foldCall = ['fold', 'call'];
 
 class App extends React.Component {
    render (){
@@ -13,7 +19,8 @@ class App extends React.Component {
         <Header />
         <Hits />
         <Table />
-        <Cards />
+        <Cards nipesL={nipes[3]} nipesR={nipes[2]} />
+        <InfoHero />
         <Btns />
         <Foot />
     </body>
