@@ -11,7 +11,7 @@ class Cards extends React.Component {
                     <h2 className="value">A</h2>
                     <div className="nipe">{this.props.nipesL}</div>
                 </div>
-                <div className="Rhand" style={{backgroundColor:diams.color}}>
+                <div className="Rhand" style={{backgroundColor:this.props.colorR}}>
                     <h2 className="value">T</h2>
                     <div className="nipe ">{this.props.nipesR}</div>
                 </div>

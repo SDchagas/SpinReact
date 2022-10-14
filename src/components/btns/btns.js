@@ -1,11 +1,12 @@
 import React from "react";
+import { run } from "../../data/run";
 import './index.css';
 
 class Btns extends React.Component {
     render() {
         return (
           <div>
-             <button className="btAction btn">{this.props.text}</button>
+             <button className="btAction btn" onClick={run} >{this.props.text}</button>
           </div>
         );
     }

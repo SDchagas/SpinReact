@@ -1,7 +1,10 @@
 import React from "react";
+import { run } from "../../data/run";
 import './index.css';
 
+
 class InfoHero extends React.Component {
+ 
     render() {
         return (
          <div>
@@ -9,8 +12,8 @@ class InfoHero extends React.Component {
               <h2 id="heroT">Hero</h2>
             </div>
               <div className="stats box">
-                 <h5>BBs: 12</h5>
-                 <h5>Position: BB</h5>
+                 <h4>BBs: {run[0]}</h4>
+                 <h4>Position: {run[1]} </h4>
               </div>
          </div>
         );

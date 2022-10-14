@@ -27,3 +27,5 @@ class DivBtns extends React.Component {
 }
 //aqui colocamos a propriedade, e no outro arquivo ela recupera;
 export default DivBtns; 
+
+//map cria um botão para cada item do objeto

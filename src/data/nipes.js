@@ -15,3 +15,5 @@ export const spades ={
     nipe:'♠',
     color: '#111111',  
 }
+
+

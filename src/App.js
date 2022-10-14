@@ -6,19 +6,24 @@ import Table  from "./components/table/table";
 import Cards from "./components/cards/cards";
 import InfoHero from "./components/infohero/infohero";
 import DivBtns from './components/btns/divBtns';
-import { diams } from "./data/nipes";
+import { diams, hearts } from "./data/nipes";
+import { run } from './data/run';
+
 
 
 
 class App extends React.Component {
+
+   
    render (){
+    console.log(this.state)
     return (
     <body>
         <Header />
         <Hits />
         <Table />
-        <Cards nipesL={diams.nipe} nipesR={diams.nipe} />
-        <InfoHero />
+        <Cards nipesL={diams.nipe} nipesR={hearts.nipe} colorR={hearts.color} />
+        <InfoHero bbs={run} position={run}/>
         <DivBtns />
         <Foot />
     </body>
