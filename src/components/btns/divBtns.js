@@ -2,14 +2,25 @@ import React from "react";
 import Btns from "./btns";
 import './index.css';
 
-const text = ['All-in', 'Check', 'Fold']
+const TextBtns = [{
+    text: 'All-in',
+    clas: 'allin',
+},
+{
+    text: 'check',
+    clas: 'ck', 
+},
+{
+    text: 'fold',
+    clas: 'fold', 
+}]
 
 class DivBtns extends React.Component {
     render() {
         return (
             <div className="btns">
-            { text.map(()=>{
-                return <Btns text={text} />
+            { TextBtns.map(TextBtns=>{
+                return <Btns text={TextBtns.text} />
             })}</div>
         );
     }

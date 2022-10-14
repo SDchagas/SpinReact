@@ -1,5 +1,4 @@
 import React from "react";
-import Btns from "./components/btns/btns";
 import Header from "./components/Header/header";
 import Hits from "./components/hits/hits";
 import Foot from './components/footer/footer';
@@ -7,8 +6,10 @@ import Table  from "./components/table/table";
 import Cards from "./components/cards/cards";
 import InfoHero from "./components/infohero/infohero";
 import DivBtns from './components/btns/divBtns';
+import { diams } from "./data/nipes";
 
-const nipes = ['♦','♣' ,'♥', '♠']
+
+
 class App extends React.Component {
    render (){
     return (
@@ -16,7 +17,7 @@ class App extends React.Component {
         <Header />
         <Hits />
         <Table />
-        <Cards nipesL={nipes[3]} nipesR={nipes[2]} />
+        <Cards nipesL={diams.nipe} nipesR={diams.nipe} />
         <InfoHero />
         <DivBtns />
         <Foot />

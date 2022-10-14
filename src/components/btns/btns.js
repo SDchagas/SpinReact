@@ -4,7 +4,7 @@ import './index.css';
 class Btns extends React.Component {
     render() {
         return (
-          <div className="btns" id="divBotoes">
+          <div>
              <button className="btAction btn">{this.props.text}</button>
           </div>
         );

@@ -1,7 +1,8 @@
 .hits {
+    width: 18%;
     position: absolute;
     display: flex;
-    margin-left: 85%;
+    margin-left: 80%;
     flex-direction: column;
     top:5%;
 

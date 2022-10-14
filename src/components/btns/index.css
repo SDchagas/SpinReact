@@ -6,16 +6,16 @@
   justify-content: center;
     width: 100%;
     left: 0%;
-    bottom: 8%;
+    bottom: 6%;
     position: absolute
 }
 
 .btAction {
     cursor: pointer;
-    border-top-left-radius:30% ;
-    border-bottom-right-radius: 30%;
+    border-top-left-radius:40% ;
+    border-bottom-right-radius: 40%;
     width: 120px;
-    padding: 1%;
+    padding: 7%;
     box-shadow: 0 9px #999;
   
    }
