@@ -3,21 +3,21 @@ import './index.css';
 import { diams } from "../../data/nipes";
 
 
-class Cards extends React.Component {
-    render() {
-        return (
-            <div id="cards">               
-                <div className="Lhand" style={{backgroundColor:diams.color}}>
-                    <h2 className="value">A</h2>
-                    <div className="nipe">{this.props.nipesL}</div>
-                </div>
-                <div className="Rhand" style={{backgroundColor:this.props.colorR}}>
-                    <h2 className="value">T</h2>
-                    <div className="nipe ">{this.props.nipesR}</div>
-                </div>
+const Cards = (props) => {
+    
+    return (
+        <div id="cards">               
+            <div className="Lhand" style={{backgroundColor:diams.color}}>
+                <h2 className="value">A</h2>
+                <div className="nipe">{props.nipesL}</div>
             </div>
-        );
-    }
+            <div className="Rhand" style={{backgroundColor:props.colorR}}>
+                <h2 className="value">T</h2>
+                <div className="nipe ">{props.nipesR}</div>
+            </div>
+        </div>
+    );
+    
 }
 
 

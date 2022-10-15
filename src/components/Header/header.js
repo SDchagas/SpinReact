@@ -1,7 +1,8 @@
 import React from "react";
 import './index.css'
-class Header extends React.Component {
-    render() {
+
+
+const Header =() => {
         return (
             <div className="bgroxo">
                 <svg id="icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -23,6 +24,6 @@ l-330 -331 1105 0 1105 0 370 370 370 370 -1055 -1 c-803 0 -1066 -3 -1101
             </div>
         );
     }
-}
+
 //aqui colocamos a propriedade, e no outro arquivo ela recupera;
 export default Header; //esporta essa função para que possamos recuperar em outro arquivo

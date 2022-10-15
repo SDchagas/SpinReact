@@ -15,15 +15,15 @@ const TextBtns = [{
     clas: 'fold', 
 }]
 
-class DivBtns extends React.Component {
-    render() {
-        return (
-            <div className="btns">
-            { TextBtns.map(TextBtns=>{
-                return <Btns text={TextBtns.text} />
-            })}</div>
-        );
-    }
+const DivBtns = () =>{
+    
+    return (
+        <div className="btns">
+        { TextBtns.map(TextBtns=>{
+            return <Btns text={TextBtns.text} />
+        })}</div>
+    );
+    
 }
 //aqui colocamos a propriedade, e no outro arquivo ela recupera;
 export default DivBtns; 

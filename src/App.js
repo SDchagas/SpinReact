@@ -12,11 +12,8 @@ import { run } from './data/run';
 
 
 
-class App extends React.Component {
-
+const App = ()=> {
    
-   render (){
-    console.log(this.state)
     return (
     <body>
         <Header />
@@ -29,7 +26,7 @@ class App extends React.Component {
     </body>
 );
 }
-}
+
 //passando propriedades para o componente: aqui definimos o nome da propriede
 // que sera enviado pelo arquivo profile.js
 export default App;
