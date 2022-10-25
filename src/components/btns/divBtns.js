@@ -1,27 +1,31 @@
 import React from "react";
 import Btns from "./btns";
 import './index.css';
+import { run } from '../../data/run';
 
-const TextBtns = [{
-    text: 'All-in',
-    clas: 'allin',
-},
-{
-    text: 'check',
-    clas: 'ck', 
-},
-{
-    text: 'fold',
-    clas: 'fold', 
-}]
 
-const DivBtns = () =>{
+const DivBtns = (props) =>{
     
     return (
         <div className="btns">
-        { TextBtns.map(TextBtns=>{
-            return <Btns text={TextBtns.text} />
-        })}</div>
+            <Btns text={'All-in'} />
+            <Btns text={'Check'} state={props.state} onClick={()=> {
+                run();
+            }} />
+            <Btns text={'Fold'} />
+            <Btns text={'iso 2x call'} />
+            <Btns text={'iso 2x fold'} />
+            <Btns text={'iso 2,5x call'} />
+            <Btns text={'iso 2,5x fold'} />
+            <Btns text={'iso 3x call'} />
+            <Btns text={'iso 3x fold'} />
+            <Btns text={'iso 3,5x call'} />
+            <Btns text={'iso 3,5x fold'} />
+            <Btns text={'iso 4x call'} />
+            <Btns text={'iso 4x fold'} />
+            <Btns text={'iso 4,5x call'} />
+            <Btns text={'iso 4,5x fold'} />
+        </div>
     );
     
 }
@@ -29,3 +33,6 @@ const DivBtns = () =>{
 export default DivBtns; 
 
 //map cria um botão para cada item do objeto
+// //{ TextBtns.map(TextBtns=>{
+//     return <Btns text={TextBtns.text}/>
+// })}

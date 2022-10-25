@@ -1,16 +1,7 @@
 import React from "react";
 import './index.css';
 
-class Hits extends React.Component {
-  state ={ //estado sempre um objeto
-    hits: 0,
-    percent:0
-  }
-
-  hitChange = () => {
-    this.setState({hits:this.state.hits+1});
-  };
-    render() {
+const Hits = ()=> {
         return (
           <div className="hits">     
              <div><h3>Acertos:  10</h3> </div>     
@@ -18,6 +9,6 @@ class Hits extends React.Component {
           </div>
         );
     }
-}
+
 //aqui colocamos a propriedade, e no outro arquivo ela recupera;
 export default Hits; 

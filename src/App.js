@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./components/Header/header";
 import Hits from "./components/hits/hits";
 import Foot from './components/footer/footer';
@@ -10,18 +10,27 @@ import { diams, hearts } from "./data/nipes";
 import { run } from './data/run';
 
 
-
-
 const App = ()=> {
-   
+
+    const [infohero, setInfohero] = useState([0,'BB'])
+    const [cards, setCards] = useState(['A','T'])
+   function teste () {
+    setInfohero(run)
+   }
+    useEffect(() => {
+     
+    },[cards, infohero])
+
     return (
     <body>
         <Header />
         <Hits />
         <Table />
-        <Cards nipesL={diams.nipe} nipesR={hearts.nipe} colorR={hearts.color} />
-        <InfoHero bbs={run} position={run}/>
-        <DivBtns />
+        <Cards nipesL={diams.nipe} nipesR={hearts.nipe} 
+        colorR={hearts.color}
+        rcard={cards[0]} lcard= {cards[1]} />
+        <InfoHero bb={infohero[0]} pos={infohero[1]}/>
+        <DivBtns state = {infohero} teste={teste} />
         <Foot />
     </body>
 );
