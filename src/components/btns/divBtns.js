@@ -2,15 +2,20 @@ import React from "react";
 import Btns from "./btns";
 import './index.css';
 import { run } from '../../data/run';
+import { RandomHand } from '../../data/handomHand';
 
 
 const DivBtns = (props) =>{
+    const exec = () => {
+        props.setInfohero(run)
+        props.setCards(RandomHand)
+    }
     
     return (
         <div className="btns">
             <Btns text={'All-in'} />
             <Btns text={'Check'} state={props.state} onClick={()=> {
-                run();
+                exec();
             }} />
             <Btns text={'Fold'} />
             <Btns text={'iso 2x call'} />

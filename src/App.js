@@ -8,31 +8,35 @@ import InfoHero from "./components/infohero/infohero";
 import DivBtns from './components/btns/divBtns';
 import { diams, hearts } from "./data/nipes";
 import { run } from './data/run';
+import { RandomHand } from './data/handomHand';
+import Provider from "./components/contexts/context";
 
 
 const App = ()=> {
 
-    const [infohero, setInfohero] = useState([0,'BB'])
     const [cards, setCards] = useState(['A','T'])
+    const [infohero, setInfohero] = useState([0,'BB'])
    function teste () {
     setInfohero(run)
    }
     useEffect(() => {
      
-    },[cards, infohero])
+    },[])
 
     return (
-    <body>
+    <Provider>
         <Header />
         <Hits />
         <Table />
         <Cards nipesL={diams.nipe} nipesR={hearts.nipe} 
         colorR={hearts.color}
         rcard={cards[0]} lcard= {cards[1]} />
-        <InfoHero bb={infohero[0]} pos={infohero[1]}/>
-        <DivBtns state = {infohero} teste={teste} />
+        <InfoHero bb={infohero[0]} pos={infohero[1]} />
+        <DivBtns state = {infohero} teste={teste} 
+        setInfohero={setInfohero}
+        setCards={setCards}/>
         <Foot />
-    </body>
+    </Provider>
 );
 }
 
