@@ -8,7 +8,6 @@ import InfoHero from "./components/infohero/infohero";
 import DivBtns from './components/btns/divBtns';
 import { diams, hearts } from "./data/nipes";
 import { run } from './data/run';
-import { RandomHand } from './data/handomHand';
 import Provider from "./components/contexts/context";
 
 
@@ -16,6 +15,7 @@ const App = ()=> {
 
     const [cards, setCards] = useState(['A','T'])
     const [infohero, setInfohero] = useState([0,'BB'])
+    const [hits, setHits] = useState (['0', '0'])
    function teste () {
     setInfohero(run)
    }
