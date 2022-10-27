@@ -2,19 +2,22 @@ import React from "react";
 import Btns from "./btns";
 import './index.css';
 import { run } from '../../data/run';
-import { RandomHand } from '../../data/handomHand';
-
+import {  RandomHand } from '../../data/handomHand';
+import { infoCards } from "../../data/nipes";
 
 const DivBtns = (props) =>{
+    
     const exec = () => {
         props.setInfohero(run)
         props.setCards(RandomHand)
+        props.setIcards(infoCards)
+        // props.setHits()
     }
     
     return (
         <div className="btns">
             <Btns text={'All-in'} />
-            <Btns text={'Check'} state={props.state} onClick={()=> {
+            <Btns text={'Check'}  onClick={()=> {
                 exec();
             }} />
             <Btns text={'Fold'} />

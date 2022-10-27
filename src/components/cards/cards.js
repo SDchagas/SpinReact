@@ -1,5 +1,4 @@
 import './index.css';
-import { diams } from "../../data/nipes";
 
 
 const Cards = (props) => {
@@ -7,7 +6,7 @@ const Cards = (props) => {
 
     return (
         <div id="cards">               
-            <div className="Lhand" style={{backgroundColor:diams.color}}>
+            <div className="Lhand" style={{backgroundColor:props.colorL}}>
                 <h2 className="value">{props.rcard}</h2>
                 <div className="nipe">{props.nipesL}</div>
             </div>

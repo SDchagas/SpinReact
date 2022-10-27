@@ -6,9 +6,9 @@ import Table  from "./components/table/table";
 import Cards from "./components/cards/cards";
 import InfoHero from "./components/infohero/infohero";
 import DivBtns from './components/btns/divBtns';
-import { diams, hearts } from "./data/nipes";
 import { run } from './data/run';
 import Provider from "./components/contexts/context";
+import { RandomHand } from './data/handomHand';
 
 
 const App = ()=> {
@@ -16,27 +16,24 @@ const App = ()=> {
     const [cards, setCards] = useState(['A','T'])
     const [infohero, setInfohero] = useState([0,'BB'])
     const [hits, setHits] = useState (['0', '0'])
-   function teste () {
-    setInfohero(run)
-   }
-    useEffect(() => {
-     
-    },[])
-
+    const [iCards, setIcards] = useState (['♠','#111111', '♠','#111111'])
+  
     return (
-    <Provider>
+    <>
         <Header />
-        <Hits />
+        <Hits hits={hits[0]} percent={hits[1]}/>
         <Table />
-        <Cards nipesL={diams.nipe} nipesR={hearts.nipe} 
-        colorR={hearts.color}
+        <Cards nipesL={iCards[0]} nipesR={iCards[2]} 
+        colorR={iCards[1]} colorL={iCards[3]}
         rcard={cards[0]} lcard= {cards[1]} />
         <InfoHero bb={infohero[0]} pos={infohero[1]} />
-        <DivBtns state = {infohero} teste={teste} 
+        <DivBtns state = {infohero} 
         setInfohero={setInfohero}
-        setCards={setCards}/>
+        setCards={setCards}
+        setHits={setHits}
+        setIcards={setIcards}/>
         <Foot />
-    </Provider>
+    </>
 );
 }
 

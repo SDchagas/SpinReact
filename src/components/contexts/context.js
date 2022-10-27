@@ -2,16 +2,11 @@ import { createContext, useEffect, useState } from "react";
 
 export const CardInfoContext= createContext({});
 
-function UserProvider({ children }) {
+function Provider({ children }) {
   const [cards, setCards] = useState(['A', 'T']);
-  const [InfoHero, setInfohero] = useState ([])
+  const [InfoHero, setInfohero] = useState (['0', 'BB'])
   const [hits, setHits] = useState('')
-
-
-   useEffect(() => {
-     
-   }, []);
-
+  
   
   return (
     <CardInfoContext.Provider
@@ -24,4 +19,4 @@ function UserProvider({ children }) {
   );
 }
 
-export default UserProvider;
+export default Provider;

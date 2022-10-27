@@ -10,6 +10,10 @@ export function RandomHand (){
     if (card1===card2){
        return[card1, card2, 'd', 'h'];}         
        else if (indexc1>indexc2){
-          return[card1, card2, nipe1, nipe2];} else { return[card2, card1, nipe1, nipe2];
-          }; 
+          return[card1, card2, nipe1, nipe2];} 
+          else { return[card2, card1, nipe1, nipe2];}; 
        }
+
+export const randohand = RandomHand;
+
+      
